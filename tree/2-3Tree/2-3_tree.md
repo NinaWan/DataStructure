@@ -63,10 +63,12 @@ O(log N)
 #### Case 1. 删除叶子节点
 
 * 1.1 节点为3节点(2个数据项)：直接删除
+
   ![](imgs/img6.png)
 
 * 1.2 节点为2节点(1个数据项)，分情况讨论
     * 1.2.1 父节点为2节点，兄弟节点为3节点：旋转
+
       ![](imgs/img7.png)
 
     * 1.2.2 父节点为2节点，兄弟节点为2节点 - 满二叉树
@@ -77,9 +79,11 @@ O(log N)
         5. 最终，删除后得到的2-3树层数比删除前的层数减一。
 
       `Example 1`
+
       ![](imgs/img8.png)
 
       `Example 2`
+
       ![](imgs/img9.png)
 
     * 1.2.3 父节点为2节点，兄弟节点为2节点 - 非满二叉树
@@ -89,9 +93,11 @@ O(log N)
             * 父节点的兄弟节点为3节点：旋转
 
               `Example 1`
+
               ![](imgs/img22.png)
 
               `Example 2`
+
               ![](imgs/img23.png)
 
             * 父节点的兄弟节点为2节点
@@ -104,21 +110,27 @@ O(log N)
                     2. 继续向上删除父节点的父节点，直到无需再向上删除为止。
 
                   `Example 1`
+
                   ![](imgs/img25.png)
 
                   `Example 2`
+
                   ![](imgs/img26.png)
 
                   `Example 3`
+
                   ![](imgs/img27.png)
 
                   `Example 4`
+
                   ![](imgs/img28.png)
 
     * 1.2.4 父节点为3节点，兄弟节点为2节点：父节点下沉，与兄弟节点合并
+
       ![](imgs/img10.png)
 
     * 1.2.5 父节点为3节点，兄弟节点为3节点：父节点下沉，兄弟节点中最近值上升
+
       ![](imgs/img11.png)
 
 #### Case 2. 删除非叶子节点
@@ -129,35 +141,45 @@ O(log N)
 * 2.1 节点为3节点(2个数据项)
 
 `Example 1`
+
 ![](imgs/img12.png)
 
 `Exmaple 2`
+
 ![](imgs/img13.png)
 
 `Example 3`
+
 ![](imgs/img14.png)
 
 * 2.2 节点为2节点(1个数据项)
 
 `Example 1 - 满二叉树`
+
 ![](imgs/img15.png)
 
 `Example 2 - 父2兄3子2`
+
 ![](imgs/img16.png)
 
 `Example 3 - 父2兄2子2`
+
 ![](imgs/img17.png)
 
 `Example 4 - 父3兄2子2`
+
 ![](imgs/img18.png)
 
 `Example 5 - 父3兄3子2`
+
 ![](imgs/img19.png)
 
 `Example 6 - 左子3`
+
 ![](imgs/img20.png)
 
 `Example 7 - 右子3`
+
 ![](imgs/img21.png)
 
 #### 时间复杂度
