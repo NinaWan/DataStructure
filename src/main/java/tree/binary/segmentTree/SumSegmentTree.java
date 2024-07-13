@@ -1,4 +1,4 @@
-package tree.segmentTree;
+package tree.binary.segmentTree;
 
 public class SumSegmentTree {
     private int[] nodes;

@@ -2,7 +2,7 @@
 
 ## 红黑树的性质
 
-1. 红黑树是一颗[二叉搜索树](../../tree/binarySearchTree/binary_search_tree.md)；
+1. 红黑树是一颗[二叉搜索树](../binary/binarySearchTree/binary_search_tree.md)；
 2. 红黑树中节点分为红色和黑色两种；
 3. 根节点是黑色的；
 4. 叶子节点(i.e. 红黑树中的叶子节点指的是树尾端的Null节点)是黑色的；

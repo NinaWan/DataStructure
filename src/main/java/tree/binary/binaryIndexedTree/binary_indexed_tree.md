@@ -53,7 +53,8 @@ while(n>0){
 
 ##### tree数组
 
-定义树状数组***tree***，长度为n+1，tree[i]表示原数组(1-indexed)在区间[i-lowbit(i)+1, i]中所有元素的和，即$tree[i] = \sum\limits_{k=i-lowbit(i)+1}^{i} nums[k]$。
+定义树状数组***tree
+***，长度为n+1，tree[i]表示原数组(1-indexed)在区间[i-lowbit(i)+1, i]中所有元素的和，即$tree[i] = \sum\limits_{k=i-lowbit(i)+1}^{i} nums[k]$。
 
 例如：
 
@@ -65,7 +66,8 @@ while(n>0){
 
 ##### presum函数
 
-定义前缀和函数***presum***，presum(n)返回原数组(1-indexed)在区间[1, n]中所有元素的和，即$presum(n) = \sum\limits_{k=1}^{n} nums[k]$。
+定义前缀和函数
+***presum***，presum(n)返回原数组(1-indexed)在区间[1, n]中所有元素的和，即$presum(n) = \sum\limits_{k=1}^{n} nums[k]$。
 
 利用tree数组，可以将presum(n)拆分成$O(\log_2 n)$个连续不重叠的子区间和的和，从而高效地计算出presum(n)，即：
 

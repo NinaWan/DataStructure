@@ -1,4 +1,4 @@
-package tree.avlTree;
+package tree.binary.avlTree;
 
 public class AVLTree {
     private Node root;

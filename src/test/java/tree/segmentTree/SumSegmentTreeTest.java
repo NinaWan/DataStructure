@@ -2,6 +2,7 @@ package tree.segmentTree;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import tree.binary.segmentTree.SumSegmentTree;
 
 import static org.junit.jupiter.api.Assertions.*;
 

@@ -78,7 +78,7 @@ The difference between the height of the left and right subtree for each node is
 
 ![](imgs/img6.png)
 
-### [Binary Search Tree 二叉搜索树](binarySearchTree/binary_search_tree.md)
+### [Binary Search Tree 二叉搜索树](binary/binarySearchTree/binary_search_tree.md)
 
 For every node in the tree:
 
