@@ -1,25 +1,23 @@
-package tree.binarySearchTree;
+package tree.avlTree;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import java.util.List;
-
 import static org.junit.jupiter.api.Assertions.*;
 
-class BinarySearchTreeTest {
-    private BinarySearchTree tested;
+class AVLTreeTest {
+    private AVLTree tested;
     private int[] nums;
 
     @BeforeEach
     void setup() {
-        nums = new int[]{15, 61, 34, 11, 38, 17, 47, 57, 80, 81};
-        tested = new BinarySearchTree(nums);
+        nums = new int[]{25, 90, 1, 63, 23, 96, 24, 85, 8, 56};
+        tested = new AVLTree(nums);
     }
 
     @Test
     void search() {
-        assertTrue(tested.search(11));
+        assertTrue(tested.search(96));
         assertFalse(tested.search(20));
     }
 
@@ -27,22 +25,21 @@ class BinarySearchTreeTest {
     void insert() {
         assertEquals(nums.length, tested.getSize());
         assertFalse(tested.search(5));
+        assertTrue(tested.isBalanced());
         tested.insert(5);
         assertTrue(tested.search(5));
         assertEquals(nums.length + 1, tested.getSize());
+        assertTrue(tested.isBalanced());
     }
 
     @Test
     void delete() {
         assertEquals(nums.length, tested.getSize());
-        assertTrue(tested.search(17));
-        tested.delete(17);
-        assertFalse(tested.search(17));
+        assertTrue(tested.search(24));
+        assertTrue(tested.isBalanced());
+        tested.delete(24);
+        assertFalse(tested.search(24));
         assertEquals(nums.length - 1, tested.getSize());
-    }
-
-    @Test
-    void toSortedList() {
-        assertIterableEquals(List.of(11, 15, 17, 34, 38, 47, 57, 61, 80, 81), tested.toSortedList());
+        assertTrue(tested.isBalanced());
     }
 }

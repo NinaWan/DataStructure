@@ -68,7 +68,7 @@ Every level is completely filled.
 
 ### Balanced Binary Tree
 
-The difference between the height of the left and right subtree for each node is either 0 or 1.
+The difference between the height of the left and right subtree for each node is -1, 0 or 1.
 
 `Propertites`
 
@@ -78,7 +78,7 @@ The difference between the height of the left and right subtree for each node is
 
 ![](imgs/img6.png)
 
-### Binary Search Tree 二叉搜索树
+### [Binary Search Tree 二叉搜索树](binarySearchTree/binary_search_tree.md)
 
 For every node in the tree:
 
@@ -88,11 +88,11 @@ For every node in the tree:
 
 ![](imgs/img7.png)
 
-### Balanced Binary Search Tree / AVL Tree
+### [Balanced Binary Search Tree / AVL Tree](avlTree/avl_tree.md)
 
 A Balanced Binary Search Tree is a binary search tree as well as a balanced binary tree, which means:
 
-* The difference between the height of the left and right subtree for each node is either 0 or 1.
+* The difference between the height of the left and right subtree for each node is -1, 0 or 1.
 * Each subtree is a binary search tree.
 
 Thus, each subtree of a balanced binary search tree is also a balanced binary search tree.

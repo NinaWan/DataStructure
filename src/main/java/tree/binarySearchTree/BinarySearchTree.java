@@ -141,6 +141,10 @@ public class BinarySearchTree {
         toSortedList(node.right, sortedList);
     }
 
+    public int getSize() {
+        return size;
+    }
+
     private class Node {
         private int val;
         private Node left;
