@@ -1,10 +1,9 @@
-package tree.segmentTree;
+package tree.binary.segmentTree;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import tree.binary.segmentTree.SumSegmentTree;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class SumSegmentTreeTest {
     private SumSegmentTree tested;

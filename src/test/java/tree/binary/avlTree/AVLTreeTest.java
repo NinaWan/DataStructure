@@ -1,4 +1,4 @@
-package tree.avlTree;
+package tree.binary.avlTree;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

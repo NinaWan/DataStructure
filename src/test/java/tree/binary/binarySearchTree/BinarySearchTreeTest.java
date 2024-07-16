@@ -1,8 +1,7 @@
-package tree.binarySearchTree;
+package tree.binary.binarySearchTree;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import tree.binary.binarySearchTree.BinarySearchTree;
 
 import java.util.List;
 
