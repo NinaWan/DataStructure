@@ -10,6 +10,14 @@ public class SumSegmentTree {
         build(nums, 0, 0, n - 1);
     }
 
+
+    /**
+     * Update nums[i] to val
+     *
+     * @param nums
+     * @param i
+     * @param val  new value
+     */
     public void update(int[] nums, int i, int val) {
         if (i < 0 || i >= n) {
             return;

@@ -2,8 +2,8 @@
 
 Note for Data Structure.
 
-# Table of Content
+## Table of Content
 
-## [Tree](src/main/java/tree/tree_toc.md)
+### [Tree](src/main/java/tree/tree_toc.md)
 
-## [Union Find](src/main/java/unionFind/union_find.md)
+### [Union Find](src/main/java/unionFind/union_find.md)
